@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json.schemastore.org/mcp-server-card.json",
+  "name": "jamshedali-portfolio",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for Jamshed Ali's engineering portfolio, research projects, and AuraNix Technologies venture.",
+  "homepage": "https://jamshedali.me",
+  "endpoint": "https://jamshedali.me/api/mcp",
+  "transport": "http",
+  "author": {
+    "name": "Jamshed Ali",
+    "email": "engr.jamshed.ali.rind@gmail.com",
+    "url": "https://jamshedali.me"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "prompts": {
+      "listChanged": false
+    }
+  },
+  "tools": [
+    {
+      "name": "get_bio",
+      "description": "Retrieve biographical details, university background, contact info, and role for Jamshed Ali.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "get_projects",
+      "description": "List verified engineering, AI, and cybersecurity projects with technical stack descriptions.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "Optional category filter: Research, Web Development, AI & ML, Cybersecurity, Networking, WordPress, Writing"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_skills",
+      "description": "Retrieve technical skills, programming languages, and engineering proficiencies.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "submit_inquiry",
+      "description": "Send a direct contact inquiry or project collaboration brief to Jamshed Ali.",
+      "inputSchema": {
+        "type": "object",
+        "required": ["name", "email", "message"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Sender's full name or organization"
+          },
+          "email": {
+            "type": "string",
+            "description": "Sender's email address"
+          },
+          "type": {
+            "type": "string",
+            "description": "Project scope (AI, Web, Security, Consulting, Research)"
+          },
+          "message": {
+            "type": "string",
+            "description": "Project details or inquiry"
+          }
+        }
+      }
+    }
+  ],
+  "resources": [
+    {
+      "uri": "portfolio://bio",
+      "name": "Bio and Executive Overview",
+      "description": "Verified biography, academic standing, and leadership at AuraNix Technologies.",
+      "mimeType": "application/json"
+    },
+    {
+      "uri": "portfolio://projects",
+      "name": "Projects Archive",
+      "description": "Structured archive of all engineering and research projects.",
+      "mimeType": "application/json"
+    },
+    {
+      "uri": "portfolio://llms-txt",
+      "name": "LLMs Text Guide",
+      "description": "Compact plain text overview formatted according to the llms.txt standard.",
+      "mimeType": "text/plain"
+    }
+  ]
+}
+

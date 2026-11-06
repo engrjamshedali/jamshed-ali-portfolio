@@ -1,0 +1,30 @@
+# Jamshed Ali
+
+> Computer Systems Engineering Student at Sukkur IBA University, Full-Stack Developer, AI & Cybersecurity Researcher, and Founder/CEO of AuraNix Technologies.
+
+Jamshed Ali is a software engineer and AI researcher based in Pakistan. He specializes in autonomous multi-agent systems, scalable web applications, enterprise software architectures, and cybersecurity. He is the founder of AuraNix Technologies (auranix.tech) and the lead organizer of WordPress Campus Connect at Sukkur IBA University.
+
+## Key Pages
+
+- [Homepage](https://jamshedali.me/): Official portfolio showcasing engineering projects, interactive tools, and technical background.
+- [About](https://jamshedali.me/about): In-depth background on university education, technical skillsets, and engineering philosophy.
+- [Contact](https://jamshedali.me/contact): Direct email, social media links, phone/WhatsApp, and collaboration channels.
+- [Projects](https://jamshedali.me/#portfolio): Archive of 15+ engineering, research, and full-stack software projects.
+- [AuraNix Technologies](https://auranix.tech/): Official technology venture founded by Jamshed Ali specializing in AI and cloud solutions.
+- [Terms of Service](https://jamshedali.me/terms): Website terms and acceptable usage guidelines.
+- [Privacy Policy](https://jamshedali.me/privacy): Privacy policy and data handling principles.
+
+## Core Projects & Research
+
+- [Agentic AI for Autonomous Cyber-Defense](https://jamshedali.me/#portfolio): Multi-agent autonomous security framework conducting threat reconnaissance, automated triage, and proactive containment.
+- [Zenith Cybersecurity Dashboard](https://jamshedali.me/#portfolio): Enterprise telemetry console for real-time network traffic inspection and threat analysis.
+- [AuraNix Technologies Official Portal](https://auranix.tech/): Official digital platform and enterprise services portal.
+- [Shikarpur Sweets E-Commerce](https://jamshedali.me/#portfolio): Production web platform with scalable order management and payment flows.
+- [AuraWord Intelligent Processing](https://jamshedali.me/#portfolio): AI-powered document processing, OCR, and summarization tool.
+
+## Optional
+
+- [Full Profile & Documentation](https://jamshedali.me/llms-full.txt): Comprehensive technical documentation and complete project archive for LLMs.
+- [Markdown Representation](https://jamshedali.me/index.md): Complete page content formatted in raw Markdown.
+- [MCP Server Card](https://jamshedali.me/.well-known/mcp/server-card.json): SEP-1649 Model Context Protocol server capabilities.
+

@@ -1,0 +1,160 @@
+[
+  {
+    "type": "website",
+    "title": "AGENTIC AI FOR AUTONOMOUS CYBER-DEFENSE",
+    "description": "A Human-in-the-Loop framework for Pakistan’s critical digital infrastructure. Investigates autonomous multi-agent cognitive decision pipelines, proactive telemetry anomaly mitigation, and deterministic human-governed incident response protocols.",
+    "media": "https://auranix.tech/research",
+    "role": "Lead Researcher & Co-Author",
+    "year": "2026",
+    "category": "Research",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "type": "render",
+    "title": "ZENITH CYBERSECURITY DASHBOARD",
+    "description": "Enterprise security intelligence suite designed for real-time telemetry visualization, intrusion anomaly detection, and zero-trust perimeter defense monitoring across distributed cloud topologies.",
+    "media": "https://demo.auranix.com/zenith",
+    "role": "Frontend & Security Architect",
+    "year": "2026",
+    "category": "Cybersecurity",
+    "renders": [
+      {
+        "solid": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop",
+        "material": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
+        "final": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "type": "website",
+    "title": "AURANIX TECHNOLOGIES OFFICIAL PORTAL",
+    "description": "Production corporate digital headquarters for AuraNix Technologies (auranix.tech). Engineered with dark cinematic aesthetic, high-velocity responsive architecture, leadership showcases, and bespoke enterprise agency solutions.",
+    "media": "https://auranix.tech",
+    "role": "Founder, CEO & Lead Architect",
+    "year": "2026",
+    "category": "Web Development",
+    "image": "./Asset/img/auranix-logo.png"
+  },
+  {
+    "type": "image",
+    "title": "AURAWORD BY AURANIX",
+    "description": "Proprietary intelligent document parsing and structured text engine developed under AuraNix Technologies, delivering typographic rigor, automated workflow formatting, and cross-platform document generation.",
+    "media": "./Asset/img/auraword.png",
+    "role": "Software Architect",
+    "year": "2026",
+    "category": "AI & ML",
+    "image": "./Asset/img/auraword.png"
+  },
+  {
+    "type": "image",
+    "title": "DASTAN E HASRAT (URDU POETRY BOOK)",
+    "description": "A published collection of Urdu reflective poetry exploring existential human experiences, longing, and philosophical introspection. Centered on the creator philosophy: 'Code is Poetry, and Every Coder is a Poet'.",
+    "media": "https://auranix.tech",
+    "role": "Author & Poet",
+    "year": "2025",
+    "category": "Writing",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "type": "website",
+    "title": "NEXAFLOW FINTECH PLATFORM",
+    "description": "High-velocity financial technology landing page and real-time ledger tracker with low-latency data streams, reactive financial charts, and clean conversion ergonomics.",
+    "media": "https://demo.auranix.com/nexaflow",
+    "role": "Full-Stack Developer",
+    "year": "2026",
+    "category": "Web Development",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "type": "website",
+    "title": "STELLAR CRM WITH PREDICTIVE AI",
+    "description": "Cloud SaaS customer intelligence platform featuring automated lead scoring, cognitive pipeline prediction, and multi-channel customer lifecycle tracking.",
+    "media": "https://demo.auranix.com/stellar",
+    "role": "System Architect",
+    "year": "2025",
+    "category": "AI & ML",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "type": "website",
+    "title": "AURALINK MOBILE & NETWORK CLIENT",
+    "description": "Encrypted peer communication client and community hub featuring localized node discovery, end-to-end cryptographic key verification, and offline data sync.",
+    "media": "https://demo.auranix.com/auralink",
+    "role": "Mobile & Network Engineer",
+    "year": "2025",
+    "category": "Networking",
+    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "type": "website",
+    "title": "WORDPRESS CAMPUS CONNECT INITIATIVE",
+    "description": "Technical training initiative at Sukkur IBA University empowering over a hundred engineering students in modern full-site editing, custom block theme development, and production web deployment.",
+    "media": "https://iba-suk.edu.pk",
+    "role": "Organizer & Technical Trainer",
+    "year": "2026",
+    "category": "WordPress",
+    "image": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "type": "image",
+    "title": "ENTERPRISE NETWORK TOPOLOGY & ROUTING",
+    "description": "Multi-tier campus network architecture simulated with Cisco Packet Tracer. Built with subnets, static route tables, inter-VLAN routing across multilayer switches, and security ACLs.",
+    "media": "https://github.com/auranixtech",
+    "role": "Network Engineer",
+    "year": "2026",
+    "category": "Networking",
+    "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "type": "image",
+    "title": "SHIKARPUR SWEETS COMMERCE SYSTEM",
+    "description": "E-commerce web platform for regional confectionery heritage, featuring inventory cataloging, custom invoice generation, and responsive shopping cart workflows.",
+    "media": "./Asset/img/shikarpur-sweets.png",
+    "role": "Frontend Developer",
+    "year": "2026",
+    "category": "Web Development",
+    "image": "./Asset/img/shikarpur-sweets.png"
+  },
+  {
+    "type": "website",
+    "title": "ELEARNING MODULAR COURSE PLATFORM",
+    "description": "Structured educational platform offering clean modules for HTML, CSS, Python programming, and UI design with responsive layout and semantic markup.",
+    "media": "https://github.com/auranixtech",
+    "role": "Web Developer",
+    "year": "2026",
+    "category": "Web Development",
+    "image": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "type": "website",
+    "title": "ASIA CUP STATISTICAL ML PREDICTOR",
+    "description": "Interactive data analytics and machine learning application using Python, pandas, and statistical inference to model match probabilities based on pitch, venue, and team metrics.",
+    "media": "https://github.com/auranixtech",
+    "role": "ML Developer",
+    "year": "2025",
+    "category": "AI & ML",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "type": "website",
+    "title": "BIRD GAME & PHYSICS CANVAS",
+    "description": "Browser game experiment built using HTML5 Canvas and JavaScript physics models, implementing delta-time frame loops, velocity vector bounds, and persistent score caching.",
+    "media": "https://github.com/auranixtech",
+    "role": "Developer",
+    "year": "2025",
+    "category": "Creative Experiments",
+    "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "type": "image",
+    "title": "SIGNALS & SYSTEMS MATLAB TOOLKIT",
+    "description": "Computational signal algorithms in MATLAB and C++ covering discrete convolution, Fourier transform decompositions, and impulse response simulations for linear time-invariant systems.",
+    "media": "https://github.com/auranixtech",
+    "role": "Computer Systems Engineering",
+    "year": "2026",
+    "category": "Research",
+    "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1200&auto=format&fit=crop"
+  }
+]
+

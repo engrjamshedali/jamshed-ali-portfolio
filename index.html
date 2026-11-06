@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="description" content="Jamshed Ali — Computer Systems Engineering student at Sukkur IBA University, Full-Stack Developer, AI Researcher, and Founder of AuraNix Technologies. Engineering digital experiences, autonomous agentic AI, and cybersecurity." />
+  <meta name="author" content="Jamshed Ali" />
+  <link rel="canonical" href="https://jamshedali.me/" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:site_name" content="Jamshed Ali Portfolio" />
+  <meta property="og:title" content="JAMSHED ALI | Computer Systems Engineering Student, Developer &amp; Founder" />
+  <meta property="og:description" content="Engineering digital experiences, AI research, and high-performance software solutions. Explore the portfolio of Jamshed Ali, founder of AuraNix Technologies." />
+  <meta property="og:image" content="https://jamshedali.me/Asset/img/jamshed-portrait.png" />
+  <meta property="og:url" content="https://jamshedali.me/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JAMSHED ALI | Developer, Researcher &amp; Founder" />
+  <meta name="twitter:description" content="Engineering digital experiences, AI research, and scalable software solutions. Founder of AuraNix Technologies." />
+  <meta name="twitter:image" content="https://jamshedali.me/Asset/img/jamshed-portrait.png" />
+
+  <!-- Agent & Machine-Readable Resources -->
+  <link rel="alternate" type="text/plain" href="https://jamshedali.me/llms.txt" title="LLMs Text Summary" />
+  <link rel="alternate" type="text/markdown" href="https://jamshedali.me/index.md" title="Markdown Content" />
+  <link rel="service-desc" type="application/json" href="https://jamshedali.me/.well-known/mcp/server-card.json" title="MCP Server Card" />
+
+  <title>JAMSHED ALI | Computer Systems Engineering Student, Developer &amp; Founder</title>
+  <link rel="icon" href="./Asset/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="./Asset/img/jamshed-portrait.png" as="image" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./Asset/dist/app.css" />
+
+  <!-- WebMCP Registration Script for in-browser agents -->
+  <script>
+    (function() {
+      const bioInfo = {
+        name: "Jamshed Ali",
+        alternateName: "Jamshed Ali Rind",
+        title: "Computer Systems Engineering Student, Developer, Researcher & Founder",
+        university: "Sukkur IBA University (CSE-V)",
+        company: "AuraNix Technologies (Founder & CEO)",
+        companyUrl: "https://auranix.tech",
+        location: "Sukkur, Sindh, Pakistan",
+        website: "https://jamshedali.me",
+        email: "engr.jamshed.ali.rind@gmail.com",
+        phone: "+92 370 1228685",
+        summary: "Engineering digital experiences, autonomous AI agents, and high-performance software."
+      };
+
+      const tools = [
+        {
+          name: "getPortfolioBio",
+          description: "Get Jamshed Ali's biographical details, academic background at Sukkur IBA University, and AuraNix Technologies leadership info.",
+          inputSchema: { type: "object", properties: {} },
+          execute: async () => bioInfo
+        },
+        {
+          name: "getProjects",
+          description: "List verified engineering, research, and software projects by Jamshed Ali.",
+          inputSchema: {
+            type: "object",
+            properties: {
+              category: { type: "string", description: "Filter projects by category (e.g. Research, Web Development, AI & ML, Cybersecurity, All)" }
+            }
+          },
+          execute: async (args) => {
+            const list = [
+              { title: "Agentic AI for Autonomous Cyber-Defense", category: "Research", stack: ["Python", "LangGraph", "Docker", "PyShark"], description: "Multi-agent autonomous framework for cyber-defense." },
+              { title: "Zenith Cybersecurity Dashboard", category: "Cybersecurity", stack: ["React", "Framer Motion", "Node.js", "WebSocket"], description: "Real-time network telemetry and intrusion detection console." },
+              { title: "AuraNix Technologies Official Portal", category: "Web Development", url: "https://auranix.tech", description: "Official corporate platform for AuraNix Technologies." },
+              { title: "Shikarpur Sweets E-Commerce", category: "Web Development", stack: ["React", "Node.js", "Express", "SQLite"], description: "Scalable e-commerce engine with order dispatching." },
+              { title: "AuraWord Intelligent Processing", category: "AI & ML", stack: ["Python", "Tesseract", "Gemini API"], description: "Intelligent document processing and OCR summarization." }
+            ];
+            if (args && args.category && args.category !== "All") {
+              return list.filter(p => p.category.toLowerCase().includes(args.category.toLowerCase()));
+            }
+            return list;
+          }
+        },
+        {
+          name: "contactJamshed",
+          description: "Submit a project brief or collaboration inquiry to Jamshed Ali.",
+          inputSchema: {
+            type: "object",
+            required: ["name", "message"],
+            properties: {
+              name: { type: "string", description: "Sender's name or company" },
+              type: { type: "string", description: "Project scope or topic" },
+              message: { type: "string", description: "Inquiry or message details" }
+            }
+          },
+          execute: async (args) => ({
+            success: true,
+            message: "Inquiry received. Reachable directly via engr.jamshed.ali.rind@gmail.com and WhatsApp +923701228685.",
+            details: args
+          })
+        }
+      ];
+
+      function register() {
+        if (typeof navigator !== 'undefined' && navigator.modelContext && typeof navigator.modelContext.registerTool === 'function') {
+          tools.forEach(tool => {
+            try { navigator.modelContext.registerTool(tool); } catch (e) {}
+          });
+        }
+        if (typeof window !== 'undefined') {
+          window.__WEB_MCP_TOOLS__ = tools;
+          if (!window.navigator.modelContext) {
+            window.navigator.modelContext = {
+              tools: new Map(),
+              registerTool(tool) { this.tools.set(tool.name, tool); return true; },
+              getTools() { return Array.from(this.tools.values()); }
+            };
+            tools.forEach(t => window.navigator.modelContext.registerTool(t));
+          }
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', register);
+      } else {
+        register();
+      }
+    })();
+  </script>
+
+  <!-- Comprehensive JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://jamshedali.me/#website",
+        "url": "https://jamshedali.me/",
+        "name": "Jamshed Ali Portfolio",
+        "description": "Portfolio of Jamshed Ali: Computer Systems Engineering Student, Developer, Researcher, and Founder of AuraNix Technologies.",
+        "publisher": {
+          "@id": "https://jamshedali.me/#person"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://jamshedali.me/#webpage",
+        "url": "https://jamshedali.me/",
+        "name": "JAMSHED ALI | Computer Systems Engineering Student, Developer & Founder",
+        "isPartOf": {
+          "@id": "https://jamshedali.me/#website"
+        },
+        "about": {
+          "@id": "https://jamshedali.me/#person"
+        },
+        "mainEntity": {
+          "@id": "https://jamshedali.me/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://jamshedali.me/#person",
+        "name": "Jamshed Ali",
+        "alternateName": ["Jamshed Ali Rind", "Jamshed"],
+        "url": "https://jamshedali.me/",
+        "image": "https://jamshedali.me/Asset/img/jamshed-portrait.png",
+        "jobTitle": "Full-Stack Developer & AI Researcher",
+        "worksFor": {
+          "@id": "https://jamshedali.me/#organization"
+        },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Sukkur IBA University",
+          "url": "https://www.iba-suk.edu.pk/"
+        },
+        "email": "mailto:engr.jamshed.ali.rind@gmail.com",
+        "telephone": "+923701228685",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sukkur",
+          "addressRegion": "Sindh",
+          "addressCountry": "PK"
+        },
+        "sameAs": [
+          "https://github.com/JamshedAliRind",
+          "https://github.com/auranixtech",
+          "https://linkedin.com/in/jamshedali",
+          "https://x.com/jamshedalirind",
+          "https://auranix.tech"
+        ],
+        "knowsAbout": [
+          "Computer Systems Engineering",
+          "Artificial Intelligence",
+          "Agentic AI",
+          "Cybersecurity",
+          "Full-Stack Web Development",
+          "Network Architecture",
+          "React",
+          "Node.js",
+          "Python"
+        ]
+      },
+      {
+        "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
+        "@id": "https://jamshedali.me/#organization",
+        "name": "AuraNix Technologies",
+        "alternateName": "AuraNix",
+        "url": "https://auranix.tech/",
+        "logo": "https://jamshedali.me/Asset/img/auranix-logo.png",
+        "founder": {
+          "@id": "https://jamshedali.me/#person"
+        },
+        "foundingDate": "2025",
+        "description": "Next-generation engineering venture specializing in autonomous AI agents, scalable web engineering, and enterprise cybersecurity.",
+        "email": "mailto:engr.jamshed.ali.rind@gmail.com",
+        "telephone": "+923701228685",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sukkur",
+          "addressRegion": "Sindh",
+          "addressCountry": "PK"
+        },
+        "sameAs": [
+          "https://auranix.tech",
+          "https://github.com/auranixtech",
+          "https://linkedin.com/company/auranixtech"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://jamshedali.me/#projects",
+        "name": "Key Engineering and Research Projects",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Agentic AI for Autonomous Cyber-Defense",
+              "applicationCategory": "SecurityApplication",
+              "operatingSystem": "Linux, Cloud",
+              "description": "Multi-agent autonomous framework conducting threat reconnaissance, automated triage, and proactive containment."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Zenith Cybersecurity Dashboard",
+              "applicationCategory": "SecurityApplication",
+              "operatingSystem": "Web",
+              "description": "Enterprise-grade telemetry console for network traffic inspection and threat analysis."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "AuraNix Technologies Official Portal",
+              "applicationCategory": "WebApplication",
+              "operatingSystem": "Web",
+              "url": "https://auranix.tech",
+              "description": "Official digital platform and services portal for AuraNix Technologies."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script src="./Asset/dist/app.js" defer></script>
+</head>
+<body>
+  <!-- Semantic Pre-Rendered Content (Accessible to Agents & Crawlers without JS) -->
+  <div id="root">
+    <header class="header">
+      <a class="logo" href="#home">JAMSHED ALI<span>®</span></a>
+      <nav class="nav-links">
+        <a href="#portfolio">Works</a>
+        <a href="/about">About</a>
+        <a href="#auranix">AuraNix</a>
+        <a href="/contact">Contact</a>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero section-wrap">
+        <div class="hero-content">
+          <span class="hero-tag">ENGINEERING / RESEARCH / VENTURE</span>
+          <h1 class="display hero-title">JAMSHED ALI</h1>
+          <p class="hero-bio">
+            Computer Systems Engineering Student at Sukkur IBA University (CSE-V), Full-Stack Developer, AI &amp; Cybersecurity Researcher, and Founder/CEO of AuraNix Technologies (auranix.tech).
+          </p>
+          <div class="hero-meta">
+            <span>Class of 2027 · Sukkur IBA University</span>
+            <span>15+ Verified Engineering Projects</span>
+            <span>Founder &amp; CEO · AuraNix Technologies</span>
+          </div>
+          <div class="hero-actions">
+            <a class="solid-button" href="#portfolio">Explore Works</a>
+            <a class="outline-button" href="/Asset/cv/Jamshed_Ali_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume (PDF)</a>
+            <a class="outline-button" href="/about">Full Bio &amp; About</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="portfolio" class="portfolio section-wrap">
+        <div class="portfolio-head">
+          <span class="eyebrow">01 / VERIFIED PROJECTS</span>
+          <h2 class="display">SELECTED WORKS</h2>
+          <p>Multi-disciplinary engineering spanning autonomous AI frameworks, network defense platforms, web applications, and enterprise tools.</p>
+        </div>
+        <div class="projects-list">
+          <article class="project-entry">
+            <h3>Agentic AI for Autonomous Cyber-Defense</h3>
+            <span class="category-tag">Research · AI &amp; Cybersecurity</span>
+            <p>Multi-agent autonomous framework conducting threat reconnaissance, automated triage, and proactive containment in zero-trust network architectures.</p>
+            <p><strong>Stack:</strong> Python, LangGraph, PyShark, FastEmbed, Docker, Linux</p>
+          </article>
+          <article class="project-entry">
+            <h3>Zenith Cybersecurity Dashboard</h3>
+            <span class="category-tag">Cybersecurity · Web Development</span>
+            <p>Enterprise-grade telemetry console for real-time network traffic inspection, firewall monitoring, and intrusion telemetry.</p>
+            <p><strong>Stack:</strong> React, Framer Motion, Node.js, WebSockets, Canvas API</p>
+          </article>
+          <article class="project-entry">
+            <h3>AuraNix Technologies Official Platform</h3>
+            <span class="category-tag">Enterprise · Web Development</span>
+            <p>Public digital headquarters and consulting portal for AuraNix Technologies, delivering autonomous AI and high-assurance web systems.</p>
+            <p><strong>URL:</strong> <a href="https://auranix.tech" target="_blank" rel="noopener noreferrer">https://auranix.tech</a></p>
+          </article>
+          <article class="project-entry">
+            <h3>Shikarpur Sweets E-Commerce Engine</h3>
+            <span class="category-tag">Web Development</span>
+            <p>Full-stack e-commerce system featuring dynamic inventory synchronization, responsive cart workflows, and order dispatch management.</p>
+            <p><strong>Stack:</strong> React, Node.js, Express, SQLite</p>
+          </article>
+          <article class="project-entry">
+            <h3>AuraWord Intelligent Processing</h3>
+            <span class="category-tag">AI &amp; ML</span>
+            <p>Intelligent document cognition suite featuring OCR, automatic semantic segmentation, contextual summary generation, and export pipelines.</p>
+            <p><strong>Stack:</strong> Python, Tesseract OCR, Gemini API, Streamlit</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- AuraNix Technologies Section -->
+      <section id="auranix" class="auranix section-wrap">
+        <span class="eyebrow">02 / THE VENTURE</span>
+        <h2 class="display">AURANIX TECHNOLOGIES</h2>
+        <p>
+          Founded in 2025 by Jamshed Ali, AuraNix Technologies is a forward-deployed software and intelligence studio engineering next-generation technological solutions across three core pillars:
+        </p>
+        <div class="pillars-grid">
+          <div>
+            <h3>Autonomous AI Agents</h3>
+            <p>Orchestrating agentic workflows, deterministic LLM pipelines, and contextual intelligence systems.</p>
+          </div>
+          <div>
+            <h3>Scalable Web Engineering</h3>
+            <p>High-performance web applications built on modern frameworks, microservices, and reliable architectures.</p>
+          </div>
+          <div>
+            <h3>Hardened Cybersecurity</h3>
+            <p>Proactive vulnerability assessments, real-time traffic monitoring, and resilient digital infrastructure.</p>
+          </div>
+        </div>
+        <p><a href="https://auranix.tech" target="_blank" rel="noopener noreferrer">Visit auranix.tech &rarr;</a></p>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about section-wrap">
+        <span class="eyebrow">03 / ACADEMIC &amp; TECHNICAL IDENTITY</span>
+        <h2 class="display">ABOUT JAMSHED ALI</h2>
+        <p>
+          Undergraduate Computer Systems Engineering student (Semester V) at <strong>Sukkur IBA University</strong>.
+          Academic curriculum focuses on microprocessor systems, data structures and algorithms, signals and systems, computer networks, and low-level hardware-software co-design.
+        </p>
+        <p>
+          Organizer of <strong>WordPress Campus Connect 2026</strong> at Sukkur IBA University (trained 100+ students), Event &amp; Discipline Lead for the <strong>CSE Society</strong>, and author of <em>Dastan e Hasrat</em>.
+        </p>
+        <p><a href="/about">Read Detailed Biography &amp; Technical Toolkit &rarr;</a></p>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section-wrap">
+        <span class="eyebrow">04 / INITIATE CONTACT</span>
+        <h2 class="display">LET’S WORK TOGETHER.</h2>
+        <p>
+          Have a project, research inquiry, or engineering challenge? Connect directly or submit a project brief.
+        </p>
+        <div class="contact-details">
+          <p><strong>Email:</strong> <a href="mailto:engr.jamshed.ali.rind@gmail.com">engr.jamshed.ali.rind@gmail.com</a></p>
+          <p><strong>Direct Phone &amp; WhatsApp:</strong> <a href="https://wa.me/923701228685" target="_blank" rel="noopener noreferrer">+92 370 1228685</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jamshedali" target="_blank" rel="noopener noreferrer">linkedin.com/in/jamshedali</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/JamshedAliRind" target="_blank" rel="noopener noreferrer">github.com/JamshedAliRind</a></p>
+          <p><strong>Location:</strong> Sukkur IBA University, Sukkur, Sindh, Pakistan</p>
+        </div>
+
+        <form
+          toolname="contactJamshed"
+          tooldescription="Submit a collaboration inquiry, project brief, or message directly to Jamshed Ali."
+          data-tool-name="contactJamshed"
+          data-tool-description="Submit a collaboration inquiry, project brief, or message directly to Jamshed Ali."
+          action="https://wa.me/923701228685"
+          method="GET"
+          target="_blank"
+          class="project-brief-form"
+        >
+          <label>
+            Your Name / Organization
+            <input name="name" required placeholder="Name, team, or university" maxLength="100" />
+          </label>
+          <label>
+            Project Scope &amp; Focus
+            <select name="type">
+              <option>Artificial Intelligence &amp; Autonomous Agents</option>
+              <option>Full-Stack Web &amp; Software Development</option>
+              <option>Cybersecurity &amp; Network Architecture</option>
+              <option>WordPress Enterprise &amp; Custom Themes</option>
+              <option>Academic Research &amp; Technical Writing</option>
+              <option>Engineering Consulting</option>
+            </select>
+          </label>
+          <label>
+            Project Description &amp; Objectives
+            <textarea name="message" required rows="3" placeholder="Briefly describe your objectives, technical requirements, and estimated timeframe…" maxLength="3000"></textarea>
+          </label>
+          <button type="submit">Proceed to WhatsApp Brief &rarr;</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <a class="wordmark" href="#home">JAMSHED ALI<span>®</span></a>
+        <span>&copy; 2026 JAMSHED ALI. CODE IS POETRY. ALL RIGHTS RESERVED.</span>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/llms.txt">llms.txt</a>
+        <a href="/index.md">index.md</a>
+        <a href="/.well-known/mcp/server-card.json">MCP Card</a>
+        <a href="https://github.com/JamshedAliRind" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/jamshedali" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </footer>
+  </div>
+
+  <noscript>
+    <main style="background:#090909;color:#eee;padding:40px;font-family:sans-serif;max-width:800px;margin:0 auto">
+      <h2>Jamshed Ali | Developer, Researcher &amp; Founder</h2>
+      <p>Computer Systems Engineering Student at Sukkur IBA University &amp; Founder of AuraNix Technologies.</p>
+      <p>Email: <a style="color:#ef4151" href="mailto:engr.jamshed.ali.rind@gmail.com">engr.jamshed.ali.rind@gmail.com</a></p>
+      <p>Direct Links: <a href="/about" style="color:#ef4151">About</a> | <a href="/contact" style="color:#ef4151">Contact</a> | <a href="/terms" style="color:#ef4151">Terms</a> | <a href="/privacy" style="color:#ef4151">Privacy</a> | <a href="/llms.txt" style="color:#ef4151">llms.txt</a></p>
+    </main>
+  </noscript>
+</body>
+</html>

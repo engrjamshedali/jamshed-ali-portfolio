@@ -1,0 +1,96 @@
+# Jamshed Ali — Complete Technical Profile & Documentation
+
+> Comprehensive archive of Jamshed Ali's academic background, engineering architecture, verified projects, research contributions, and entrepreneurial ventures.
+
+## Profile Summary
+- **Full Name:** Jamshed Ali (Jamshed Ali Rind)
+- **Primary Domain:** https://jamshedali.me
+- **Alternate Domain:** https://jamshedali.com
+- **Role:** Founder & CEO at AuraNix Technologies | Undergrad at Sukkur IBA University (CSE-V)
+- **Primary Email:** engr.jamshed.ali.rind@gmail.com
+- **Phone / WhatsApp:** +92 370 1228685
+- **Location:** Sukkur, Sindh, Pakistan
+- **GitHub:** https://github.com/JamshedAliRind and https://github.com/auranixtech
+- **LinkedIn:** https://linkedin.com/in/jamshedali
+- **Venture Website:** https://auranix.tech
+
+---
+
+## Academic Credentials
+- **Institution:** Sukkur IBA University
+- **Degree Program:** Bachelor of Science in Computer Systems Engineering (Class of 2027)
+- **Current Standing:** 5th Semester (CSE-V)
+- **Key Coursework:**
+  - Microprocessor Systems & Assembly Programming (8086 / ARM)
+  - Computer Organization and Architecture
+  - Data Structures and Algorithms (C++ / Java)
+  - Signals and Systems & Digital Logic Design
+  - Computer Communication Networks (OSI, TCP/IP, Routing)
+  - Database Management Systems & SQL
+
+---
+
+## Entrepreneurial Venture: AuraNix Technologies
+- **Venture Name:** AuraNix Technologies (auranix.tech)
+- **Role:** Founder & Chief Executive Officer
+- **Founding Year:** 2025
+- **Pillars:**
+  1. **Autonomous AI:** Multi-agent frameworks, LLM integrations, retrieval-augmented generation (RAG), and custom model fine-tuning.
+  2. **Scalable Web Engineering:** High-performance React/Node.js web architectures, real-time telemetry systems, and headless CMS integrations.
+  3. **Hardened Cybersecurity:** Network posture audits, zero-trust infrastructure, vulnerability assessment, and threat simulation.
+
+---
+
+## Technical Skills & Tooling
+- **Programming Languages:** Python, C++, Java, JavaScript (ES2022+), TypeScript, SQL, Bash, Assembly (x86).
+- **Web & Frontend:** React 19, Framer Motion, Tailwind CSS, Modern Vanilla CSS, WebMCP, HTML5 Semantic Web.
+- **Backend & APIs:** Node.js, Express, REST APIs, JSON-RPC, Model Context Protocol (MCP), SQLite, PostgreSQL, MongoDB.
+- **AI & ML:** Gemini API, OpenAI API, LangChain, Multi-Agent Systems, HuggingFace, PyTorch basics, Vector DBs.
+- **DevOps & Infrastructure:** Git, GitHub Actions, Docker, Linux Administration (Ubuntu/Debian), Apache (.htaccess), Nginx, Hostinger VPS.
+- **Hardware & Embedded:** Arduino, Raspberry Pi, ESP32, Logic Analyzers, Circuit Simulation (Proteus).
+
+---
+
+## Key Projects Archive
+
+### 1. Agentic AI for Autonomous Cyber-Defense
+- **Category:** Research & Artificial Intelligence
+- **Architecture:** Multi-agent autonomous framework utilizing decentralized agent nodes for network traffic inspection, threat surface mapping, automated incident triage, and simulated remediation actions.
+- **Stack:** Python, LangGraph / Multi-Agent Orch, FastEmbed, PyShark, Docker.
+
+### 2. Zenith Cybersecurity Dashboard
+- **Category:** Cybersecurity & Web Development
+- **Architecture:** Real-time visual monitoring dashboard tracking packets, ingress/egress anomalies, firewall telemetry, and automated intrusion detection indicators.
+- **Stack:** React, Framer Motion, Node.js, WebSocket, Canvas API.
+
+### 3. AuraNix Technologies Official Platform
+- **Category:** Web Development & Enterprise
+- **Architecture:** High-performance corporate site and services platform for AuraNix Technologies featuring dark editorial aesthetic and responsive design.
+- **URL:** https://auranix.tech
+
+### 4. Shikarpur Sweets E-Commerce Engine
+- **Category:** Web Development
+- **Architecture:** E-commerce platform engineered for regional delicacy distribution featuring catalog management, cart state synchronization, and checkout pipelines.
+- **Stack:** React, Node.js, Express, SQLite.
+
+### 5. AuraWord Intelligent Document Processor
+- **Category:** AI & ML
+- **Architecture:** Optical character recognition, contextual document classification, automated summary generation, and semantic keyword extraction.
+- **Stack:** Python, Tesseract, Gemini API, Streamlit.
+
+---
+
+## Community Leadership & Milestones
+- **WordPress Campus Connect 2026:** Lead Organizer and Technical Trainer at Sukkur IBA University, training 100+ students in full-site editing and WordPress themes.
+- **CSE Society Lead:** Event and Discipline Management Lead at Sukkur IBA University CSE Society.
+- **Author:** Authored and published "Dastan e Hasrat", exploring existentialism, introspection, and classical Urdu poetic traditions.
+- **Dream Institute Sukkur:** Technical Workshop Trainer delivering hands-on computer science bootcamps.
+
+---
+
+## Machine-Readable Resources
+- **Model Context Protocol (MCP):** https://jamshedali.me/.well-known/mcp/server-card.json
+- **Markdown Alternate:** https://jamshedali.me/index.md
+- **Content Signals:** search=yes, ai-train=no
+- **Sitemap:** https://jamshedali.me/sitemap.xml
+

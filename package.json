@@ -1,0 +1,29 @@
+{
+  "name": "jamshed-ali-cinematic-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --watch",
+    "start": "node server/index.mjs",
+    "server": "node server/index.mjs",
+    "check": "node scripts/check.mjs",
+    "test:agent": "node scripts/test-agent-readiness.mjs",
+    "setup-admin": "node server/setup-admin.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "framer-motion": "^12.23.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^0.468.0",
+    "multer": "^2.5.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "esbuild": "^0.25.0"
+  },
+  "devDependencies": {
+  }
+}

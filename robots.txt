@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+Disallow: /data/
+Disallow: /server/
+
+# Content Signals Policy
+Content-Signal: search=yes, ai-train=no
+
+Sitemap: https://jamshedali.me/sitemap.xml
+Sitemap: https://jamshedali.com/sitemap.xml

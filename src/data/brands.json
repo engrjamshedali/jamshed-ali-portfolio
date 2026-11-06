@@ -1,0 +1,15 @@
+[
+  { "file": "auranix.svg", "name": "AuraNix Technologies" },
+  { "file": "siba.svg", "name": "Sukkur IBA University" },
+  { "file": "csesociety.svg", "name": "CSE Society Sukkur IBA" },
+  { "file": "wpconnect.svg", "name": "WordPress Campus Connect" },
+  { "file": "dreaminstitute.svg", "name": "Dream Institute Sukkur" },
+  { "file": "cisco.svg", "name": "Cisco Networking Academy" },
+  { "file": "python.svg", "name": "Python Foundation" },
+  { "file": "react.svg", "name": "React" },
+  { "file": "nodejs.svg", "name": "Node.js" },
+  { "file": "wordpress.svg", "name": "WordPress" },
+  { "file": "github.svg", "name": "GitHub" },
+  { "file": "linux.svg", "name": "Linux Systems" }
+]
+

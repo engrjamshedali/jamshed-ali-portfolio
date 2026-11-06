@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="description" content="404 Page Not Found — The requested resource does not exist on jamshedali.me." />
+  <title>404 — Page Not Found | Jamshed Ali</title>
+  <link rel="icon" href="./Asset/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg: #090909; --panel: #121010; --ink: #f2efeb; --muted: #a09c9a; --red: #ef4151; --line: #292323; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--ink); font-family: 'Manrope', sans-serif; line-height: 1.6; padding: 2rem 1.5rem; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
+    .container { max-width: 800px; margin: 0 auto; width: 100%; }
+    header.site-nav { display: flex; justify-content: space-between; align-items: center; padding-bottom: 2rem; border-bottom: 1px solid var(--line); margin-bottom: 3rem; }
+    .wordmark { font-family: 'Anton', sans-serif; font-size: 1.5rem; letter-spacing: 0.05em; color: var(--ink); text-decoration: none; }
+    .wordmark span { color: var(--red); }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 1.5rem; font-weight: 500; font-size: 0.95rem; }
+    nav a:hover { color: var(--ink); }
+    .hero-404 { text-align: center; padding: 4rem 1rem; }
+    .code-404 { font-family: 'Anton', sans-serif; font-size: clamp(5rem, 15vw, 10rem); color: var(--red); line-height: 1; margin-bottom: 1rem; }
+    h1 { font-family: 'Anton', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1rem; }
+    p { color: #b0aba6; font-size: 1.1rem; max-width: 500px; margin: 0 auto 2.5rem; }
+    .action-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 0.85rem 1.75rem; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: opacity 0.2s; }
+    .btn-primary { background: var(--red); color: #fff; }
+    .btn-secondary { background: var(--panel); color: var(--ink); border: 1px solid var(--line); }
+    .btn:hover { opacity: 0.9; }
+    footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; font-size: 0.85rem; color: var(--muted); }
+    footer a { color: var(--muted); text-decoration: none; margin-right: 1.25rem; }
+    footer a:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-nav">
+      <a href="/" class="wordmark">JAMSHED ALI<span>®</span></a>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/#portfolio">Projects</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero-404">
+      <div class="code-404">404</div>
+      <h1>RESOURCE NOT FOUND</h1>
+      <p>The page or resource you requested does not exist on this server. It may have been moved, renamed, or deleted.</p>
+      <div class="action-links">
+        <a href="/" class="btn btn-primary">Return to Homepage &rarr;</a>
+        <a href="/contact" class="btn btn-secondary">Contact Support</a>
+        <a href="/llms.txt" class="btn btn-secondary">View llms.txt</a>
+      </div>
+    </main>
+
+    <footer>
+      <span>&copy; 2026 Jamshed Ali. All Rights Reserved.</span>
+      <div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/llms.txt">llms.txt</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
